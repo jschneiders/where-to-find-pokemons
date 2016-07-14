@@ -1,0 +1,32 @@
+{
+  "name": "where-to-find-pokestop",
+  "version": "0.0.1",
+  "description": "A app to share gym and pokestop points",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmargreff/where-to-find-pokestop.git"
+  },
+  "keywords": [
+    "pokemon",
+    "api",
+    "nodejs"
+  ],
+  "author": "Pablo Margreff and Andre Basso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmargreff/where-to-find-pokestop/issues"
+  },
+  "homepage": "https://github.com/pmargreff/where-to-find-pokestop#readme",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "bookshelf": "^0.10.0",
+    "hapi": "^13.5.0",
+    "knex": "^0.11.7",
+    "materialize-css": "^0.97.6",
+    "pg": "^6.0.2"
+  }
+}
