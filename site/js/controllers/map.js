@@ -9,7 +9,6 @@ angular.module("pokemons").controller("MapController", function($scope, $http, $
   
   if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function(location) {
-      // console.log(location.coords.accuracy);
       $scope.map = {
         center: {
           latitude: location.coords.latitude,

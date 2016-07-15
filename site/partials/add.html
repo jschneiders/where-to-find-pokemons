@@ -1,2 +1,45 @@
-<h1>registro de pokemon aqui</h1>
-<a ui-sref="map">voltar para mapa</a>
+<div class="row" ng-controller="AddController">
+  <form class="">
+    
+    <div class="col s12 m10 offset-m1 z-depth-5">
+      <h4 class="header">Add a new pokemon location</h4>
+      <div class="row">
+        <div class="col s12 m7 teal z-depth-4">
+          <!-- TODO: add map with pushpin -->
+          another map here
+        </div>
+        <div class="col s12 m4 offset-m1 z-depth-4">
+          <div class="input-field col s12">
+            <select class="icons">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="" data-icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAqFBMVEX/////wQc3R0//VyKIeDLGjgLptA9LU0i6wMT/rgz/4oz//PP/8cn/1lqbhCvPlgPqrgX/YSH/gRf/eS//sXD/33//hh7/3Xb/7bX/+ef/yy//6ab/ugn/yCT/zTj/0kzytQb/xH/boQT/2Lb/hUP/cBzVqh+xkSPb07WmiyePimR4bzhGUUz/5p1fYUg8Sk3a1b+pn3C0q4B6dk/DvJyuqIdrZzz/2WagS1VGAAABpklEQVRIieWU2ZaCMAyGacoICLgjoIK7IiouuLz/m03Zt9Q5c20uOCd//i+E0lYQvjb8x9+eh19KQpDun+13CcJSegOA4Mq3XwNmuJUFll92Z57/vLswQ6XhCeBISBv3twk5Apwqmg9wIByC+ckBwK+IHsCe4ETkJ3sAryoHCdAkYj8Dgpr+TAFS+/IzSYFnvZMkJiWilVUtFUWpMerjldYctRBVJxVfyFYI0xp5F9o708KmX/BaWdU0dNdxXN0wM6XlIUDRrhlvzC+oLs/vqigg2A7ud2zcXyxiLTSeX5jiwJQL8Eb650T8mQweYHCACQ+Y4H47qrVEScx/eZ7g62pFJRFkOdu3RJRliBMLBeKdIzFAygCJAXFiosBYid8AULwhTZQx5h9RquDfoFA6QoAhpQN8kQaUDhGgT2k/93QAOnkSVXBgW3TtFH6yxYHNp5E2CLCmfSUxrHqk1+2yxyrJlT5dY8u0nCX1xU8ei0SZLTF/dsmRqH23Fz9SgXNJswOEHgiHf4AEW2/6de6JjkOrITr/QGehWubcZbM57ty0OPfLt8UvRbAYyZYXvt0AAAAASUVORK5CYII=" class="circle">Pokemon</option>
+              <option value="" data-icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAyVBMVEX/////HBwAAAD/HR3f398EBATl5eWMDw8QEBDfGBjh4eEHBwcNDQ3d3d3R0dH29vbnGRm/v78KAAxBQUGbm5sYGBi0tLSOjo7x8fGurq5SUlLzGhoUFBTKysrW1tZqamqDg4M4ODikpKQnJyd4eHhfX1+UEBBEREQgICCRkZF1dXUwMDCUkJV/eoB/EBCjEhJZWVk2LzgpIytiDg4kBgbRGBhSCwttDw8sBwe5FxcQAwNWCwsdBARBCgqwFhZ3DQ0fGCE1CQlHCAhgC3VYAAACjElEQVQ4jX2VeXuaQBDG1xfYcIkQ5PDgShStSY1tmkRtYtp8/w/VWQ4Fxb5/8Mj4e+ba2YGxtrgzHHveeOhw9h/pwUJFJdUN+lewfjItEGW/V0p2Hndgg1Q4e3/Od5pta7ub3+/0as4GF+5csn882ZIk9Uj01PIPMmVnTqMlsD2UUC1Jy38BntPiPODZbmGkif3yCkwbpEz+1ueYIDXtjXweow/cbq7XszWbyKyuKKW4nRylqWkUfVYVrGI76eREcPvlHWYZPAF2TYeSdKqeXNo5MC/OTcWX1MRedjutV1tsCv4XpjjNoOVwkm+pzfuPw6lw4TIg0G1maH8RZhj0eJscy6EsXZorFW9HhxPixn4/vstQWSWKbb/C5MwBDjUoUZC0bO28TkiAa8BhQyiaVKm3xZixeJVELLzHa2Gb2PbkAAzZAsr6ptIn4LP+H+A2ohr3+RMpJ60VLBhaMvrsEbe3+M78sz+YWQx1JRhxA6yNJTimOYoKWZZv4I7xH8DPPpthSRbLcnzfH00p96EovVYmJoUPHznTvfLcWMg5j0wqxhGl1xoBm7AYlAyGVZi4LPORYKjh6WmEaUDuU3+0oon/Vlp0AmdQuTjCrHEXV2XuMCtuIMuynokjpIYpUeP6OJulad4nVvUakkOqMSjHbN66kaGun26zSHEDVRe/5zAidkWVw6R4iU24Fwvh6FDXXajVFkqP16fL4QrHtgwyMR0dGugyD5RGvNiD0kVynQcGlo3159DCW13kyblMcb1WpQ4tlcxpcyH3KaflWUdisikbp+FVH43pkrkXa7dcpA+rUczDkFt3yYPYuWlX3+J5scCN6XI5LU5cTbpWs5AcuKdlvwj0K1hZ6bXPxz8KHjRe2N+tOwAAAABJRU5ErkJggg==" class="circle">Pokerstop</option>
+              <option value="" data-icon="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAdCAMAAAANS8U4AAAAhFBMVEX////+/v4AAAD9/f38/Pzv7+9jY2Pm5ub4+Pirq6tgYGCVlZXAwMBbW1tqamqnp6dYWFhQUFDT09OOjo7z8/MtLS0/Pz9KSkpycnLo6OgaGhqysrLMzMw1NTV5eXmDg4Ofn58MDAyRkZEvLy9DQ0Pd3d3Ozs5+fn4iIiKIiIgTExPDw8G4R8w2AAACsklEQVQ4jW1UiZKjIBAFAS8Ub8V4YSI6jv//fwMCSbZqO1Xh8D36bgAAgABCAMwGGEF2Vef7G3wf7YosGn4u/ycIuJedhKQPAimDnoT2Hn4A9xHhEEFNJPIaRDUz5qc+Y3OVDYkk2CARtsZCrPBqGySU59tWxHw+luU8OEuLIk8ZHcZaATF2SvQG79SfWkYv8mWcckkWK0u7OSrRJxwKPx5byyNsgcgsQfTMongadnHE+bLfITGUbGqfgT5AbJ0uRZbMnldUA50Pkcgo7UToFGePOXDqsHqkrmXneW3MKqFo8joKNvSi4bUJUflDP8lAKIxiP055RakQIjpjRvv+7PJxtLCQFcoHaJOMQF943sqTUo7ROT/LoGo3CiRrysu/8XUzaCswxvCm9KmnCI+m4+Iaz7wCcnnNAM5pct7m163CY4QwNiVBfM/K2lbh8GIAJBMHmD3822ZcbVi/rvA3/4NXwvD4mmtFCMHmMeNmMMW1zh+Ed639g/coyBoVvC7l6XLYhF2vIsLv9JH4G58BUIy18NYqiHxXkqM/xVVCbAb4B70uoBaPjXV8QGCi75Imw9y1OV9odgHSffC/VZU3ExOXyi19ENsh2op6j55zHLOiOP1m9dZ1/f15bew8qqHUOCAfwpQg1KHUlLCXUopV5WpPhmFIxlL2QR8alAqKyanOLdQME80w8nNW2qaEpqLUtmy3QCFcF6taNclVF6Q8JmFmAIL4Vg1pE0uA4FdPWjDUNU7mV6LzcTPU5ZC/lh6Grta/REFU38E+5cSNGCnyKU1qgA3+a7YA180QUP9uH7JnrN1U8Ssy1H7AtwdvJtSdHbW0zBYeF0Vc7QTfPYsAcDrBTbR+6N/e/qjRwJ9D2dsh5PrdvorMAHLG4VH1YV9bk+HXnAROi7t8G+hmI3x/u//+AG5NK5a9p9TUAAAAAElFTkSuQmCC" class="circle">Gym</option>
+            </select>
+            <label>Select a pin type</label>
+          </div>
+          
+          <div class="input-field col s12">
+            <select class="icons">
+              <option value="" disabled selected>Choose your option</option>
+              <option value="" data-icon="images/sample-1.jpg" class="circle">example 1</option>
+              <option value="" data-icon="images/office.jpg" class="circle">example 2</option>
+              <option value="" data-icon="images/yuna.jpg" class="circle">example 1</option>
+            </select>
+            <label>Select a pokemon</label>
+          </div>
+          
+        </div>
+      </div>
+      <div class="center">
+        <button ui-sref="map" class="btn waves-effect waves-light purple lighten-3" type="submit" name="action">Cancel
+          <i class="material-icons right">cancel</i>
+        </button>
+        <button ui-sref="map" class="btn waves-effect waves-light purple" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="./site/js/add.js"></script>

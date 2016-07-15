@@ -14,4 +14,4 @@ I really expect run like in linux. : )
  
 ## api
 
-cooming soon
+coming soon

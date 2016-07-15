@@ -2,7 +2,6 @@
   margin: 5px 5px 5px 5px;
 }
 
-
 #map{
   display: block;
   width: 100%;
@@ -20,4 +19,8 @@
   left: 0;
   width: 100%;
   height: calc(100% - 128px);
+}
+
+button.purple{
+  margin: 10px 10px 10px 10px;
 }
