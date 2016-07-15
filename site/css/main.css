@@ -1,0 +1,23 @@
+.logo{
+  margin: 5px 5px 5px 5px;
+}
+
+
+#map{
+  display: block;
+  width: 100%;
+  height: 550px;
+  margin: 0 auto;
+  -moz-box-shadow: 0px 5px 20px #ccc;
+  -webkit-box-shadow: 0px 5px 20px #ccc;
+  box-shadow: 0px 5px 20px #ccc;
+}
+
+/* MAP STYLE */
+.angular-google-map-container {
+  position: absolute;
+  top: 128;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 128px);
+}

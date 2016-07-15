@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html ng-app="pokemons">
 <head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="site/css/main.css"  media="screen,projection"/>
+  
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
   <meta charset="utf-8">
   <title>Home</title>
 </head>
 <body>  
-  
+  <nav>
+    <div class="nav-wrapper red">
+      <a href="#" class="brand-logo logo"><img src="site/images/pokebola-54px-54px.png" alt="Catch all"/></a>
+      <span class="brand-logo center">WHERE TO FIND POKEMONS</span>
+    </div>
+  </nav>
   <div ui-view></div>
   
 </body>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
 <script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-google-maps/dist/angular-google-maps.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcuEw7WwNnBw0K2y61Bg4Khw-Hoz8PPKs&libraries=places"></script>
+<script src="node_modules/angular-google-maps/node_modules/lodash/lodash.min.js"></script>
+<script src="node_modules/angular-google-maps/node_modules/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
 <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="site/js/main.js"></script>
-
+<script src="site/js/controllers/map.js"></script>
 </html>
