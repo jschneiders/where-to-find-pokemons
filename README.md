@@ -1,4 +1,4 @@
-# where-to-find-pokestop
+# where-to-find-pokemons
 
 ## site
 
