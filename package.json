@@ -15,7 +15,7 @@
     "api",
     "nodejs"
   ],
-  "author": "Pablo Margreff and Andre Basso",
+  "author": "Andre Basso, Pablo Margreff",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pmargreff/where-to-find-pokestop/issues"
@@ -27,6 +27,8 @@
     "hapi": "^13.5.0",
     "knex": "^0.11.7",
     "materialize-css": "^0.97.6",
-    "pg": "^6.0.2"
+    "pg": "^6.0.2",
+    "angular-ui-router": "~0.3.1",
+    "jquery": "~3.1.0"
   }
 }
